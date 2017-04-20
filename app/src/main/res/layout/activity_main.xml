@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="net.liuzhenhua.shapedimageview.MainActivity">
+
+    <net.liuzhenhua.shapedimageview.CircleImageView
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/dog_and_cat" />
+
+    <net.liuzhenhua.shapedimageview.ShapedImageView
+        android:id="@+id/shaped"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/dog"
+        app:bitmapDrawable="@drawable/ic_account"
+        app:layout_editor_absoluteY="242dp"
+        app:layout_editor_absoluteX="28dp" />
+
+</android.support.constraint.ConstraintLayout>
