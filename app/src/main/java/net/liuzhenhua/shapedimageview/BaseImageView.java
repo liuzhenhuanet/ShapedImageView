@@ -40,6 +40,7 @@ public abstract class BaseImageView extends ImageView {
         }
         mRect.set(drawable.getBounds());
         getImageMatrix().mapRect(mRect);
+        mRect.offset(getPaddingLeft(), getPaddingTop());
         int saveCount = canvas.saveLayer(mRect, null,
                 Canvas.MATRIX_SAVE_FLAG |
                         Canvas.CLIP_SAVE_FLAG |
