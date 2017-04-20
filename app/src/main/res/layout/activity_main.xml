@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="net.liuzhenhua.shapedimageview.MainActivity">
+    android:gravity="center"
+    android:orientation="vertical">
 
     <net.liuzhenhua.shapedimageview.CircleImageView
         android:id="@+id/circle"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:src="@drawable/dog_and_cat" />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:paddingLeft="40dp"
+        android:paddingBottom="40dp"
+        android:src="@drawable/dog" />
 
     <net.liuzhenhua.shapedimageview.ShapedImageView
         android:id="@+id/shaped"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/dog"
-        app:bitmapDrawable="@drawable/ic_account"
-        app:layout_editor_absoluteY="242dp"
-        app:layout_editor_absoluteX="28dp" />
+        app:bitmapDrawable="@drawable/star" />
 
-</android.support.constraint.ConstraintLayout>
+    <net.liuzhenhua.shapedimageview.RoundImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:background="#542398"
+        android:src="@drawable/dog_and_cat"
+        app:topRightRadius="5dp"
+        app:bottomLeftRadius="5dp"
+        app:radius="30dp" />
+
+</LinearLayout>
