@@ -9,4 +9,6 @@
 最下面的图片是使用`RoundImageView`显示的，四个圆角的圆角弧度都可以在xml布局文件中指定  
 ![狗狗和猫猫](/app/src/main/res/drawable/dog_and_cat.jpg)  
 
+# 原理
+使用Android中的画笔Paint的Xfermode的各种模式来实现ImageView图片形状的切割、镂空。
 
